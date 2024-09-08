@@ -1,9 +1,3 @@
----
-layout: page
-title: Resume
-permalink: /resume/
-main_nav: true
----
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
 <script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
@@ -16,8 +10,15 @@ main_nav: true
   .no-margin { margin: 0; }
   .margin-bottom { margin-bottom: 1.5em; } /* Adjust the value to get the desired double-space effect */
 </style>
-<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
-<!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
+<body onload="document.body.innerHTML=md.html(document.body.innerHTML);>
+
+---
+layout: page
+title: Resume
+permalink: /resume/
+main_nav: true
+---
+
 
 <span style="float:right;padding:6px;color:white"> 
   <img src="images/mail.png" alt="Mail Icon" style="vertical-align:middle;width:16px;height:16px;margin-right:6px;"> alextd@colostate.edu <br> 
