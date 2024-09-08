@@ -5,7 +5,7 @@ permalink: /about/
 main_nav: true
 ---
 
-![alt text]({{ site.baseurl }}/assets/profile_photo,jpg_ "Profile Picture"){:.profile}
+![alt text]({{ site.baseurl }}/assets/profile_photo.jpg "Profile Picture"){:.profile}
 
 I’m a Master’s student in Civil Engineering at Colorado State University, specializing in hydrology and hydraulics. My work centers on understanding water systems in mountainous landscapes, with a focus on river restoration and post-wildfire hydrology. I’m passionate about exploring how climate change impacts these environments and developing management strategies to mitigate its effects.
 
