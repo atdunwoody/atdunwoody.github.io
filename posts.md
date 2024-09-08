@@ -5,24 +5,17 @@ permalink: /projects/
 main_nav: true
 ---
 
-{% for category in site.categories %}
-  {% capture cat %}{{ category | first }}{% endcapture %}
-  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
-  {% for desc in site.descriptions %}
-    {% if desc.cat == cat %}
-      <p class="desc"><em>{{ desc.desc }}</em></p>
-    {% endif %}
-  {% endfor %}
-  <ul class="projects-list">
-  {% for post in site.categories[cat] %}
+<h1>Projects</h1>
+
+<ul class="projects-list">
+{% for page in site.pages %}
+  {% if page.categories contains "projects" %}
     <li>
       <strong>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       </strong>
-      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
     </li>
-  {% endfor %}
-  </ul>
-  {% if forloop.last == false %}<hr>{% endif %}
+  {% endif %}
 {% endfor %}
+</ul>
 <br>
