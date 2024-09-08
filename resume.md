@@ -5,13 +5,6 @@ permalink: /resume/
 main_nav: true
 ---
 
-
-<span style="float:right;padding:6px;color:white"> 
-  <img src="images/mail.png" alt="Mail Icon" style="vertical-align:middle;width:16px;height:16px;margin-right:6px;"> alextd@colostate.edu <br> 
-  <img src="images/telephone.png" alt="Telephone Icon" style="vertical-align:middle;width:16px;height:16px;margin-right:6px;"> mobile: 858 750 0088 <br> 
-  <img src="images/linkedin.png" alt="LinkedIn Icon" style="vertical-align:middle;width:16px;height:16px;margin-right:6px;"> linkedin.com/in/alex-thornton-dunwoody <br>
-</span>
-
 # Alex Thornton-Dunwoody, EIT
 <!--
 ## Executive Summary
@@ -79,8 +72,6 @@ Expected May 2025 | GPA: 3.95 | Secretary of Engineering Water Resources Institu
 </ul>
 </div>
 
-##    
-
 ## Skills
   * ArcGIS & QGIS
   * Python & R
@@ -97,4 +88,4 @@ Expected May 2025 | GPA: 3.95 | Secretary of Engineering Water Resources Institu
   * Physical Hydrology & Quantitative Ecohydrology
   * Remote Sensing
 
-</body>
+
