@@ -1,3 +1,11 @@
+---
+layout: page
+title: Resume
+permalink: /resume/
+main_nav: true
+---
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
 <script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
@@ -12,12 +20,6 @@
 </style>
 <body onload="document.body.innerHTML=md.html(document.body.innerHTML);>
 
----
-layout: page
-title: Resume
-permalink: /resume/
-main_nav: true
----
 
 
 <span style="float:right;padding:6px;color:white"> 
