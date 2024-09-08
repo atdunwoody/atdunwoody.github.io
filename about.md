@@ -5,14 +5,15 @@ permalink: /about/
 main_nav: true
 ---
 
-![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
+![alt text]({{ site.baseurl }}/assets/profile_photo,jpg_ "Profile Picture"){:.profile}
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+I’m a Master’s student in Civil Engineering at Colorado State University, specializing in hydrology and hydraulics. My work centers on understanding water systems in mountainous landscapes, with a focus on river restoration and post-wildfire hydrology. I’m passionate about exploring how climate change impacts these environments and developing management strategies to mitigate its effects.
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+I also enjoy creating tools that streamline workflows for earth scientists and river engineers, reducing manual tasks like aerial imagery classification and valley bottom delineation so they can focus on solving larger problems.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I have extensive experience working with geospatial data science, primarily using Python and R, and have developed skills in terrain analysis and drone-based Structure from Motion (SfM). You can explore more of my work under the [Projects] tab.
 
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+Outside of my academic work, I enjoy reading, cooking, mountain biking, and spending time with my wife and surprisingly athletic tiny dog.
+
+[Projects]: https://atdunwoody.github.io/projects/
+

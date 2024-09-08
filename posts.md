@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Posts"
-permalink: /posts/
+title: "Projects"
+permalink: /projects/
 main_nav: true
 ---
 
@@ -13,7 +13,7 @@ main_nav: true
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
-  <ul class="posts-list">
+  <ul class="projects-list">
   {% for post in site.categories[cat] %}
     <li>
       <strong>
