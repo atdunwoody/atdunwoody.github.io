@@ -1,21 +1,28 @@
 ---
 layout: page
-title: "Projects"
-permalink: /projects/
+title: "Posts"
+permalink: /posts/
 main_nav: true
 ---
 
-<h1>Projects</h1>
-
-<ul class="projects-list">
-{% for page in site.pages %}
-  {% if page.categories contains "projects" %}
+{% for category in site.categories %}
+  {% capture cat %}{{ category | first }}{% endcapture %}
+  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
+  <ul class="posts-list">
+  {% for post in site.categories[cat] %}
     <li>
       <strong>
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
     </li>
-  {% endif %}
+  {% endfor %}
+  </ul>
+  {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
-</ul>
 <br>
