@@ -2,7 +2,7 @@
 layout: post
 title: Automating HEC-RAS Unsteady Flow Runs for Sensitivity Analysis
 date: 2024-09-09
-categories: HEC-RAS, Python, Automation
+categories: HEC-RAS
 ---
 
 # Automating HEC-RAS Unsteady Flow Runs for Sensitivity Analysis
