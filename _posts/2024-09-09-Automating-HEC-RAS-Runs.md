@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Automating HEC-RAS Unsteady Flow Runs for Sensitivity Analysis
+author: Alex Thornton-Dunwoody
 date: 2024-09-09
 categories: HEC-RAS
 ---
 
 # Automating HEC-RAS Unsteady Flow Runs for Sensitivity Analysis
 
-When conducting hydrologic sensitivity analysis using HEC-RAS, it becomes essential to run multiple unsteady flow simulations with different input hydrographs. This allows you to explore how variations in discharge affect hydraulic conditions, such as the extent of inundation or valley bottom identification. Doing this manually can be time-consuming, so in this post, I’ll walk you through automating HEC-RAS unsteady flow runs using Python, focusing on how to modify and execute multiple plans efficiently.
+When conducting hydrologic sensitivity analysis using HEC-RAS, it becomes essential to run multiple unsteady flow simulations with different input hydrographs. This allows you to explore how variations in discharge affect the extent of inundation and the distribution and magnitude of flow velocities. Doing this manually can be time-consuming and tedious, so in this post, I’ll walk you through automating HEC-RAS unsteady flow runs using Python, focusing on how to modify and execute multiple plans efficiently.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -19,7 +20,7 @@ When conducting hydrologic sensitivity analysis using HEC-RAS, it becomes essent
 - [Conclusion](#conclusion)
 
 ## Introduction
-The goal of this workflow is to automate the modification and execution of HEC-RAS plans using unsteady flow files that represent different discharge values. This is especially useful in sensitivity analysis, where you need to assess how different inflow scenarios influence model outcomes.
+The goal of this workflow is to automate the modification and execution of HEC-RAS plans using unsteady flow files that represent different discharge values. We'll use a "psuedo-steady flow" analysis, where we ramp up flow in a hydrograph to a steady state flow.
 
 We’ll cover how to:
 - Create unsteady flow (.u##) files programmatically with varying discharge values.
@@ -40,7 +41,7 @@ pip install -e .
 
 ### Ensure HEC-RAS is Installed
 
-Ensure you have HEC-RAS installed on your system, and the paths to your HEC-RAS executable are correctly set in your environment.
+Ensure you have HEC-RAS installed on your system. This workflow is built on pyHMT2D, which currently requires HEC-RAS versions 5.0.7, 6.0.0, 6.1.0, 6.3.1 or 6.4.1. 
 
 ### Creating Unsteady Flow Files
 
@@ -144,19 +145,16 @@ You can loop through multiple plans and run them sequentially:
 
 ``` python
 project_file = r"C:\HEC-RAS\MyProject\project.prj"
-plans = ["plan1.p01", "plan2.p01", "plan3.p01"]
+plans = ["p01", "p02", "p03"]
+# Optionally leave plans empty to process all plans in a project
+plans = []
 
 for plan in plans:
     run_HEC_RAS_plan(project_file, plan)
 ```
 ## Exporting Results
-HEC-RAS allows results to be exported in various formats, including GeoTIFF, which is ideal for spatial analysis. You can configure the export settings within HEC-RAS, or use the pyHMT2D interface to automate the export.
+HEC-RAS allows results to be exported in various formats, including GeoTIFF, through the Results dropdown of RAS Mapper. Currently, pyHMT2D only supports export to Visualization Toolkit (VTK) files, which are a 2.5D mesh product that can only be viewed in a 3D visualization software such as ParaView or Visit. 
 
-```python
-def export_results_to_geotiff(hec_ras_model, output_dir):
-    ras = hec_ras_model.get_RASController()
-    ras.ExportResults(output_dir, "GeoTIFF")
-```
 ## Conclusion
 
 Automating HEC-RAS unsteady flow runs can greatly reduce the time and effort needed for sensitivity analyses. By programmatically creating and updating unsteady flow files, modifying plan files, and automating the execution process, you can streamline your workflow and devote more time to analyzing the results.
