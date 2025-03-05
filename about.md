@@ -7,9 +7,9 @@ main_nav: true
 
 ![alt text]({{ site.baseurl }}/assets/profile_photo.jpg "Profile Picture"){:.profile}
 
-I’m a Master’s student in Civil Engineering at Colorado State University, specializing in hydrology and hydraulics. My work centers on understanding water systems in mountainous landscapes, with a focus on river restoration and post-wildfire hydrology. I’m passionate about exploring how climate change impacts these environments and developing management strategies to mitigate its effects.
+Rivers don’t follow a straight path, and neither has my career. Driven by a desire to tackle the climate and biodiversity crises, I first worked in regenerative agriculture before shifting my focus to river science. River restoration captivates me because it’s inherently interdisciplinary—combining hydraulics, geomorphology, and ecology to develop solutions rooted in a deep understanding of river processes.
 
-I also enjoy creating tools that streamline workflows for earth scientists and river engineers, reducing manual tasks like aerial imagery classification and valley bottom delineation so they can focus on solving larger problems.
+Today, my work spans fish passage design, post-wildfire erosion studies, and river restoration planning, all driven by a passion for understanding how landscapes evolve and how we can restore them. I love the mix of hands-on fieldwork and data-driven analysis—whether I’m wading into a stream to take measurements, flying a drone for topographic mapping, building a hydraulic model, or coding in Python and R to make sense of complex watershed dynamics.
 
 I have extensive experience working with geospatial data science, primarily using Python and R, and have developed skills in terrain analysis and drone-based Structure from Motion (SfM). You can explore more of my work under the [Projects] tab.
 
