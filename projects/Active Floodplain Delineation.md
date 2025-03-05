@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Automated Valley Bottom Delineation"
+title: "Active Floodplain Delineation"
 categories: projects
 ---
 

@@ -157,10 +157,6 @@ HEC-RAS allows results to be exported in various formats, including GeoTIFF, thr
 
 ## Conclusion
 
-Automating HEC-RAS unsteady flow runs can greatly reduce the time and effort needed for sensitivity analyses. By programmatically creating and updating unsteady flow files, modifying plan files, and automating the execution process, you can streamline your workflow and devote more time to analyzing the results.
-
-This process is highly adaptable and can be extended to handle additional parameters, such as variable flow rates, different boundary conditions, or alternative geometries.
-
 You can find the complete code for this post at my [GitHub repository](https://github.com/atdunwoody/hydraulic_modeling):
 
 - `preprocessing/unsteady_flow_file_generator.py`
